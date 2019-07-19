@@ -18,4 +18,12 @@ public class Warmup1 {
             return (a + b);
     }
 
+    // https://codingbat.com/prob/p116624
+    public int diff21(int n) {
+        if((n - 21) > 0)
+            return Math.abs(n - 21) * 2;
+        else
+            return Math.abs(n - 21);
+    }
+
 }
