@@ -160,4 +160,21 @@ public class Warmup1 {
         return false;
     }
 
+    // https://codingbat.com/prob/p199720
+    public String startOz(String str) {
+        String s = "";
+
+        if (str.length() > 1) {
+            if (str.charAt(0) == 'o')
+                s += str.substring(0, 1);
+            if (str.charAt(1) == 'z')
+                s += str.substring(1, 2);
+
+            return s;
+        } else if (str.length() == 1 && str.charAt(0) == 'o') {
+            return "o";
+        } else {
+            return s;
+        }
+    }
 }
