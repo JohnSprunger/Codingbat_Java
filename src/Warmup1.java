@@ -177,4 +177,14 @@ public class Warmup1 {
             return s;
         }
     }
+
+    // https://codingbat.com/prob/p101887
+    public int intMax(int a, int b, int c) {
+        if(a > b && a > c)
+            return a;
+        else if(b > a && b > c)
+            return b;
+        else
+            return c;
+    }
 }
