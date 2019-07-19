@@ -187,4 +187,17 @@ public class Warmup1 {
         else
             return c;
     }
+
+    // https://codingbat.com/prob/p172021
+    public int close10(int a, int b) {
+        int absA = Math.abs(a - 10);
+        int absB = Math.abs(b - 10);
+
+        if(absA < absB)
+            return a;
+        else if(absB < absA)
+            return b;
+        else
+            return 0;
+    }
 }
