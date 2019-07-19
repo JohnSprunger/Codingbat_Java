@@ -42,4 +42,12 @@ public class Warmup1 {
         int diff200 = 200 - n;
         return (Math.abs(diff100) <= 10 || Math.abs(diff200) <= 10);
     }
+
+    // https://codingbat.com/prob/p159227
+    public boolean posNeg(int a, int b, boolean negative) {
+        if (negative && a < 0 && b < 0)
+            return true;
+
+        return (!negative && ((a < 0 && b > 0) || (a > 0 && b < 0)));
+    }
 }
