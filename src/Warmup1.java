@@ -142,4 +142,14 @@ public class Warmup1 {
         return (b < 13 || b > 19) && (a >= 13 && a <= 19);
     }
 
+    // https://codingbat.com/prob/p100905
+    public String delDel(String str) {
+        if(str.length() > 3){
+            if(str.substring(1,4).equals("del"))
+                return (str.substring(0, 1) + str.substring(4));
+            else
+                return str;
+        } else return str;
+    }
+
 }
