@@ -65,5 +65,14 @@ public class Warmup1 {
     }
 
     // https://codingbat.com/prob/p123384
-    
+    public String frontBack(String str) {
+        if(str.length() > 1){
+            String frontChar = str.substring(0 , 1);
+            String backChar = str.substring((str.length() - 1));
+            String midString = str.substring(1 , (str.length() - 1));
+            return backChar + midString + frontChar;
+        }
+        else
+            return str;
+    }
 }
