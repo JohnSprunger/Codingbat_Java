@@ -236,4 +236,14 @@ public class Warmup1 {
     public boolean lastDigit(int a, int b) {
         return(a % 10 == b % 10);
     }
+
+    // https://codingbat.com/prob/p125268
+    public String endUp(String str) {
+        if (str.length() > 3) {
+            return (str.substring(0, str.length() - 3) +
+                    (str.substring((str.length() - 3))).toUpperCase());
+        } else {
+            return str.toUpperCase();
+        }
+    }
 }
