@@ -246,4 +246,14 @@ public class Warmup1 {
             return str.toUpperCase();
         }
     }
+
+    // https://codingbat.com/prob/p196441
+    public String everyNth(String str, int n) {
+        String s = "";
+        for (int i = 0; i < str.length();) {
+            s += str.charAt(i);
+            i += n;
+        }
+        return s;
+    }
 }
