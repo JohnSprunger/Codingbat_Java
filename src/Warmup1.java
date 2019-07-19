@@ -95,4 +95,19 @@ public class Warmup1 {
 
         return newString;
     }
+
+    // https://codingbat.com/prob/p112564
+    public boolean or35(int n) {
+        return(n % 3 == 0) || (n % 5 == 0);
+    }
+
+    // https://codingbat.com/prob/p183592
+    public String front22(String str) {
+        if(str.length() == 1)
+            return (str.substring(0,1) + str + str.substring(0,1));
+        else if(str.length() == 0)
+            return str;
+        else
+            return (str.substring(0,2) + str + str.substring(0,2));
+    }
 }
