@@ -208,4 +208,27 @@ public class Warmup1 {
 
         return (a >= 40 && a <= 50) && (b >= 40 && b <= 50);
     }
+
+    // https://codingbat.com/prob/p177372
+    public int max1020(int a, int b) {
+        if (((a >= 10) & (a <= 20)) & !((b >= 10) & (b <= 20)))
+            return a;
+        else if (!((a >= 10) & (a <= 20)) & ((b >= 10) & (b <= 20)))
+            return b;
+        else if (((a >= 10) & (a <= 20)) & ((b >= 10) & (b <= 20))) {
+            if (a > b) return a;
+            else return b;
+        } else return 0;
+    }
+
+    // https://codingbat.com/prob/p173784
+    public boolean stringE(String str) {
+        int cnt = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == 'e')
+                cnt += 1;
+        }
+
+        return (cnt > 0 & cnt < 4);
+    }
 }
