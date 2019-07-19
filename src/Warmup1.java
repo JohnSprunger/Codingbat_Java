@@ -26,4 +26,9 @@ public class Warmup1 {
             return Math.abs(n - 21);
     }
 
+    // https://codingbat.com/prob/p140449
+    public boolean parrotTrouble(boolean talking, int hour) {
+        return ((hour < 7 || hour > 20) && talking);
+    }
+
 }
