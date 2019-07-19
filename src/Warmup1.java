@@ -31,4 +31,15 @@ public class Warmup1 {
         return ((hour < 7 || hour > 20) && talking);
     }
 
+    // https://codingbat.com/prob/p182873
+    public boolean makes10(int a, int b) {
+        return (a == 10 || b == 10 || (a + b) == 10);
+    }
+
+    // https://codingbat.com/prob/p184004
+    public boolean nearHundred(int n) {
+        int diff100 = 100 - n;
+        int diff200 = 200 - n;
+        return (Math.abs(diff100) <= 10 || Math.abs(diff200) <= 10);
+    }
 }
