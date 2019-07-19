@@ -50,4 +50,12 @@ public class Warmup1 {
 
         return (!negative && ((a < 0 && b > 0) || (a > 0 && b < 0)));
     }
+
+    // https://codingbat.com/prob/p191914
+    public String notString(String str) {
+        if (str.length() > 2 && str.substring(0, 3).equals("not"))
+            return str;
+
+        return "not " + str;
+    }
 }
