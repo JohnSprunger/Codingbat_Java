@@ -75,4 +75,16 @@ public class Warmup1 {
         else
             return str;
     }
+
+    // https://codingbat.com/prob/p136351
+    public String front3(String str) {
+        if(str.length() >= 3){
+            String threeString = str.substring(0 , 3);
+            return threeString + threeString + threeString;
+        }
+        else if(str.length() >= 1)
+            return str + str + str;
+        else
+            return str;
+    }
 }
