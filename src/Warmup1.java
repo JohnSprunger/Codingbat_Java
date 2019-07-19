@@ -87,4 +87,12 @@ public class Warmup1 {
         else
             return str;
     }
+
+    // https://codingbat.com/prob/p161642
+    public String backAround(String str) {
+        String newString = str.substring(str.length() - 1) + str;
+        newString += str.substring(str.length() - 1);
+
+        return newString;
+    }
 }
