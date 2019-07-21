@@ -2,7 +2,7 @@
 public class Warmup1 {
     // https://codingbat.com/prob/p187868
     public boolean sleepIn(boolean weekday, boolean vacation) {
-        return(vacation || !weekday);
+        return (vacation || !weekday);
     }
 
     // https://codingbat.com/prob/p181646
